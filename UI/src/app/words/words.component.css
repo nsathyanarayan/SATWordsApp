@@ -1,0 +1,203 @@
+/* HeroesComponent's private CSS styles */
+.selected {
+    background-color: #CFD8DC !important;
+    color: white;
+  }
+  .wordList {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  .wordList li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .wordList li.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+  }
+  .wordList li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  .wordList .text {
+    position: relative;
+    top: -3px;
+  }
+  .wordList .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .label {
+    color: white;
+    padding: 8px;
+    font-family: Arial;
+}
+
+  button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+  .button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+  button:hover {
+    background-color: #cfd8dc;
+  }
+
+  button.delete {
+    position: relative;
+    left: 194px;
+    top: -32px;
+    background-color: gray !important;
+    color: white;
+  }
+
+  .list-type3{
+    margin:0 auto;
+    width:500px;
+    }
+    .list-type3 li, .list-type3 a{
+    float:left;
+    height:35px;
+    line-height:35px;
+    position:relative;
+    font-size:15px;
+    margin-bottom: 12px;
+    font-family: 'Raleway', sans-serif;
+    transition: background-color 1.5s ease;
+    }
+    .list-type3 a{
+    padding:0 60px 0 12px;
+    background:#0089e0;
+    color:#fff;
+    text-decoration:none;
+    -moz-border-radius-bottomright:4px;
+    -webkit-border-bottom-right-radius:4px;
+    border-bottom-right-radius:4px;
+    -moz-border-radius-topright:4px;
+    -webkit-border-top-right-radius:4px;
+    border-top-right-radius:4px;
+    }
+
+    .list-type3 a:before{
+    content:"";
+    float:left;
+    position:absolute;
+    top:0;
+    left:-12px;
+    width:0;
+    height:0;
+    border-color:transparent #0089e0 transparent transparent;
+    border-style:solid;
+    border-width: 18px 12px 18px 0;
+    }
+
+    .list-type3 a:after{
+    content:"";
+    position:absolute;
+    top:15px;
+    left:0;
+    float:left;
+    width:6px;
+    height:6px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    background:#fff;
+    -moz-box-shadow:-1px -1px 2px #004977;
+    -webkit-box-shadow:-1px -1px 2px #004977;
+    box-shadow:-1px -1px 2px #004977;
+    }
+    .list-type3 a:hover{
+    background:#555;
+    }
+
+    .list-type3 a:hover:before{
+    border-color:transparent #0089e0 transparent transparent;
+    }
+
+    .list-type5{
+      width:300px;
+      margin:0 auto;
+      }
+      .list-type5 ol {
+      list-style-type: none;
+      list-style-type: decimal !ie; /*IE 7- hack*/
+      margin: 0;
+      margin-left: 1em;
+      padding: 0;
+      counter-reset: li-counter;
+      }
+      .list-type5 ol li{
+      position: relative;
+      margin-bottom: 1.5em;
+      padding: 0.5em;
+      background-color: lightseagreen;
+      padding-left: 58px;
+      text-align: left;
+      }
+
+      .list-type5 a{
+      text-decoration:none;
+      color:black;
+      font-size:15px;
+      font-family: 'Raleway', sans-serif;
+      }
+
+      .list-type5 li:hover{
+      box-shadow:inset -1em 0 rgb(108, 136, 214);
+      -webkit-transition: box-shadow 0.5s; /* For Safari 3.1 to 6.0 */
+      transition: box-shadow 0.5s;
+      }
+
+      .list-type5 ol li:before {
+      position: absolute;
+      top: -0.3em;
+      left: -0.5em;
+      width: 1.8em;
+      height: 1.2em;
+      font-size: 2em;
+      line-height: 1.2;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+      background-color: #6CD6CC;
+      transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+      z-index: 99;
+      overflow: hidden;
+      content: counter(li-counter);
+      counter-increment: li-counter;
+      }

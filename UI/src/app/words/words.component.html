@@ -1,0 +1,80 @@
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        h4 {
+
+          color: rgb(165, 107, 180);
+          font-weight: bold;
+          width: 200px;
+          display: inline-block;
+          vertical-align: middle;
+
+        }
+        label
+        {
+          color: #B4886B;
+            font-weight: bold;
+          width: 100px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .info {background-color: #2196F3;}
+
+        input
+        {
+          width: 150px;
+          vertical-align: middle;
+        }
+
+        textarea
+        {
+          width: 150px;
+          height: 100px;
+          vertical-align: middle;
+        }
+
+        .valueItems
+        {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      </style>
+</head>
+<body>
+    <h4 >New SAT Words</h4>
+  <div class="panel panel-default" >
+    <div class="panel-body"><label>Name</label>
+      <input #wordName />
+      <label>Description</label>
+      <input #description />
+      <label>Category</label>
+      <input #category />
+    </div>
+    <div class="panel-body">
+      <label>Alternates</label>
+      <input #alternates />
+      <label>Antonyms</label>
+      <input #antonyms />
+      <button class="button button1" (click)="add (wordName.value, description.value, alternates.value, category.value, antonyms.value);">Add</button>
+    </div>
+  </div>
+
+  <div class="list-type5">
+  <ol>
+  <li *ngFor="let w of wordList">
+    <div>
+      <a routerLink="/detail/{{w.name}}">
+        <span >{{w.name}}</span>
+      </a>
+      <button type="button" class="btn btn-primary btn-lg pull-right"  title = "Delete a word" (click) = "delete(w.name)">X</button>
+    </div>
+  </li>
+</ol>
+</div>
+</body>
+
+
+

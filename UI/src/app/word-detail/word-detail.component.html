@@ -1,0 +1,10 @@
+<div *ngIf="word">
+  <h2>{{word.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{word.name}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="word.name" placeholder="name"/>
+    </label>
+  </div>
+  <button (click)="goBack()">go back</button>
+</div>

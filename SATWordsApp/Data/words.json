@@ -1,0 +1,37 @@
+﻿[
+  {
+    "name": "Pessimistic",
+    "description": "tending to see the worst aspect of things or believe that the worst will happen.",
+    "alternates": "gloomy, negative, downbeat, depressed",
+    "antonyms": "optimistic",
+    "category": "General"
+  },
+  {
+    "name": "Austere",
+    "description": "severe or strict in manner, attitude, or appearance.",
+    "alternates": "severe, stern, strict, harsh, steely, flinty",
+    "antonyms": "ornate",
+    "category": "General"
+  },
+  {
+    "name": "Abate",
+    "description": "cause to become smaller or less intense.",
+    "alternates": "subside, decline, dwindle, lessen",
+    "antonyms": "Advance, develop",
+    "category": "General"
+  },
+  {
+    "name": "Abstruse",
+    "description": "difficult to understand; obscure.",
+    "alternates": "obscure, arcane, esoteric",
+    "antonyms": "clear, concrete",
+    "category": "General"
+  },
+  {
+    "name": "Acumen",
+    "description": "The ability to make good judgments and quick decisions.",
+    "alternates": "astuteness, shrewdness, acuity, sharpness",
+    "antonyms": "ignorance, stupidity",
+    "category": "General"
+  }
+]

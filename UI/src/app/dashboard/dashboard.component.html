@@ -1,0 +1,20 @@
+<div class="flip-container vertical"  *ngFor="let w of SATWords">
+    <div class="flipper ">
+      <div class="front panel panel-default">
+        <!-- front card -->
+        <div class="panel-heading">
+          <h3>{{w.name}}</h3>
+        </div>
+
+      </div>
+      <div class="back panel panel-default">
+        <!-- back card -->
+        <div class="panel-body">
+          <h5>Description :   {{w.description}}</h5>
+          <h5>Antonyms  :   {{w.antonyms}}</h5>
+          <h5>Alternates  :   {{w.alternates}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
