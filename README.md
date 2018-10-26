@@ -3,7 +3,7 @@
 This project was developed to help my son to practice few SAT words each day. This app has the ability to add new words and display the words like flash cards.
 It consists of 2 projects
 
-![SATApp UI](UI.JPG)
+![SATApp UI](UI.jpg)
 
 * SATWordsApp : A Web Api project that exposes endpoints to save and retrieve SAT words. 
 * UI : Angular UI application that display words like a flash cards.
