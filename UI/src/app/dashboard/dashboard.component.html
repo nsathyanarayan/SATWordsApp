@@ -1,20 +1,32 @@
-<div class="flip-container vertical"  *ngFor="let w of SATWords">
-    <div class="flipper ">
-      <div class="front panel panel-default">
-        <!-- front card -->
-        <div class="panel-heading">
-          <h3>{{w.name}}</h3>
+
+
+  <section id="flashcard">
+    <article class="card">
+        <div class="question-container">
+            <div class="question">{{SATWords[cardIndex].name}}</div>
         </div>
 
-      </div>
-      <div class="back panel panel-default">
-        <!-- back card -->
-        <div class="panel-body">
-          <h5>Description :   {{w.description}}</h5>
-          <h5>Antonyms  :   {{w.antonyms}}</h5>
-          <h5>Alternates  :   {{w.alternates}}</h5>
+        <div class="answer-container">
+            <div class="answer" *ngIf="!answerHidden">
+                  {{SATWords[cardIndex].description}}
+            </div>
+            <div class="answer1" *ngIf="!answerHidden">
+                <small>Alternates : {{SATWords[cardIndex].alternates}}</small>
+            </div>
+            <div class="answer2" *ngIf="!answerHidden">
+                <small>Antonyms: {{SATWords[cardIndex].antonyms}}</small>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+    </article>
+
+    <div class="card-stack-1"></div>
+    <div class="card-stack-2"></div>
+    <div class="card-stack-3"></div>
+</section>
+
+<section id="controls">
+    <button class="back" [class.faded]="cardOrderIndex.length < 1" (click)="goToPrevCard()">&lt;</button>
+    <button class="show-answer" (click)="showAnswer()">show answer</button>
+    <button class="next" (click)="goToNextCard()">&gt;</button>
+</section>
 
